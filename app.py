@@ -7,7 +7,7 @@ hostname = socket.gethostname()
 
 @app.route('/')
 def hello():
-    return "Hostname: {}".format(hostname)
+    return "Container hostname: {}".format(hostname)
 
 if __name__ == '__main__':
     app.run()
